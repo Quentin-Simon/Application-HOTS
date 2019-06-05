@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         MainController controller = new MainController(this, Injection.getRestApiInstance());
         controller.start();
+
     }
     public void showList(List<HotsPlayers> hotsPlayersList){
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -41,5 +42,6 @@ public class MainActivity extends Activity {
         // define an adapter
         mAdapter = new MyAdapter(hotsPlayersList);
         recyclerView.setAdapter(mAdapter);
+
     }
 }
