@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Injection {
-    static final String BASE_URL = "https://pokeapi.co/api/v2/";
+    static final String BASE_URL = "http://hotsapi.net/api/v1/heroes" ;
 
     //TODO Faire un singleton.
     public static HotsPlayersRestApi getRestApiInstance(){

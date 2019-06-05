@@ -7,5 +7,5 @@ import retrofit2.http.GET;
 
 public interface HotsPlayersRestApi {
     @GET("HotsPlayers/")
-    Call<RestHotsPlayersReponse> getPokemonList();
+    Call<RestHotsPlayersReponse> getHotsPlayersList();
 }
