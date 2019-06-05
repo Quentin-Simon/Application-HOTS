@@ -1,4 +1,4 @@
-package com.example.hots_application.model;
+package com.example.hots_application.view;
 
 import android.app.Activity;
 import android.os.Bundle;
