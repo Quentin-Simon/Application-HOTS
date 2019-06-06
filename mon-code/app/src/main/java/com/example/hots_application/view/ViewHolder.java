@@ -1,10 +1,10 @@
 package com.example.hots_application.view;
 
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.TextView;
+        import android.support.v7.widget.RecyclerView;
+        import android.view.View;
+        import android.widget.TextView;
 
-import com.example.hots_application.R;
+        import com.example.hots_application.R;
 
 
 public class ViewHolder extends RecyclerView.ViewHolder {
