@@ -32,6 +32,7 @@ public class MainController {
                 } else {
                     System.out.println(response.errorBody());
                 }
+                Log.d("API ERROR 75", "onFailure");
             }
 
             @Override
