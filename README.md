@@ -30,4 +30,4 @@ L'application Hots est la pour vous ,elle vous montrera à travers une architect
 * GitKraken permet de mergé les branches en interne est puis il envoie sur les différents service ( GitHub,GitLab,Bitbucket,Azure DevOps) 
 mon projet est composée de trois branches une branche Master et de deux branches Dev
 
-<img scr="Bitkraken.PNG" width="200"/> 
+<img scr="readme/Bitkraken.PNG" width="200"/> 
