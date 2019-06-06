@@ -4,7 +4,6 @@ import android.util.Log;
 
 import com.example.hots_application.HotsPlayersRestApi;
 import com.example.hots_application.model.HotsPlayers;
-import com.example.hots_application.model.RestHotsPlayersReponse;
 import com.example.hots_application.view.MainActivity;
 
 import java.util.List;
@@ -22,21 +21,22 @@ public class MainController {
         this.hotsPlayersRestApi = hotsPlayersRestApi;
     }
     public void start() {
-        Call<RestHotsPlayersReponse> call = hotsPlayersRestApi.getHotsPlayersList();
-        call.enqueue(new Callback<RestHotsPlayersReponse>() {
+        Call<List<HotsPlayers>> call = hotsPlayersRestApi.getHotsPlayersList();
+        call.enqueue(new Callback<List<HotsPlayers>>() {
             @Override
-            public void onResponse(Call<RestHotsPlayersReponse> call, Response<RestHotsPlayersReponse> response) {
+            public void onResponse(Call<List<HotsPlayers>> call, Response<List<HotsPlayers>> response) {
                 if(response.isSuccessful()) {
-                    RestHotsPlayersReponse restHotsPlayersReponse = response.body();
-                    List<HotsPlayers> pokemonList = restHotsPlayersReponse.getResults();
-                    view.showList(pokemonList);
+                    List<HotsPlayers> listHotsPlayers = response.body();
+
+                    view.showList(listHotsPlayers);
                 } else {
                     System.out.println(response.errorBody());
                 }
+                Log.d("API ERROR 75", "onFailure");
             }
 
             @Override
-            public void onFailure(Call<RestHotsPlayersReponse> call, Throwable t) {
+            public void onFailure(Call<List<HotsPlayers>> call, Throwable t) {
                 Log.d("API ERROR", "onFailure");
             }
         });
