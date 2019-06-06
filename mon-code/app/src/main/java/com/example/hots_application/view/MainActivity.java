@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.example.hots_application.Injection;
 import com.example.hots_application.R;
@@ -12,6 +13,7 @@ import com.example.hots_application.model.HotsPlayers;
 import com.example.hots_application.view.MyAdapter;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class MainActivity extends Activity {
@@ -28,6 +30,13 @@ public class MainActivity extends Activity {
 
     }
     public void showList(List<HotsPlayers> hotsPlayersList){
+
+       for(Iterator<HotsPlayers> i = hotsPlayersList.iterator(); i.hasNext();){
+            HotsPlayers item = i.next();
+
+            Log.d(" noms des perso",item.getName());
+        }
+
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         // use this setting to
         // improve performance if you know that changes
@@ -45,3 +54,4 @@ public class MainActivity extends Activity {
 
     }
 }
+//controller main activity 
