@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface HotsPlayersRestApi {
-    @GET("HotsPlayers/")
+    @GET("heroes/")
     Call<RestHotsPlayersReponse> getHotsPlayersList();
 }
