@@ -31,3 +31,5 @@ L'application Hots est la pour vous ,elle vous montrera à travers une architect
 mon projet est composée de trois branches une branche Master et de deux branches Dev
 
 <img scr="readme/Bitkraken.PNG" width="200"/> 
+
+https://github.com/Quentin-Simon/Application-HOTS/blob/master/Bitkraken.PNG?raw=true
